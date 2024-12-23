@@ -69,6 +69,9 @@ generateInventoryReport(): Generate a report of inventory status.
 
 ## 5.Applying Design Principles
 
+## Class Diagram 
+![Class Diagram](assets/classDiagram.png)
+
 ## Sequence Diagrams
 ### Diagram 1 - Customer interaction
 ![Sequence Diagram 1](assets/Sequence%20diagram%202.png)
