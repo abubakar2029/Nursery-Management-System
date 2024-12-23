@@ -8,6 +8,19 @@ public class Inventory {
     private int totalIndoorPlants = 0;
     private int totalOutdoorPlants = 0;
 
+    private static Inventory instance;
+
+    private Inventory() {
+    }
+
+    public static Inventory getInstance() {
+        if (instance == null) {
+            instance = new Inventory();
+        }
+        return instance;
+
+    }
+
     public void addPlant(Plant plant) {
         plantList.add(plant);
         if (plant instanceof IndoorPlant) {
@@ -31,6 +44,7 @@ public class Inventory {
         if (index != -1) {
             plantList.set(index, newPlant);
         }
+        System.out.println("Plant data updated");
     }
 
     public void getIndoorPlants() {
@@ -54,7 +68,8 @@ public class Inventory {
     }
 
     // Getters and Setters
-    public void getPlantList() {
-        System.out.println(plantList.toString());
+    public List<Plant> getPlantList() {
+//        System.out.println(plantList.toString());
+        return plantList;
     }
 }
