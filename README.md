@@ -66,3 +66,15 @@ generateInventoryReport(): Generate a report of inventory status.
 #### OutdoorPlant
 **properties:** wateringFrequency (String) 
 **methods:** displayInfo(): Display plant details.
+
+## 5.Applying Design Principles
+
+## Class Diagram 
+![Class Diagram](assets/classDiagram.png)
+
+## Sequence Diagrams
+### Diagram 1 - Customer interaction
+![Sequence Diagram 1](assets/Sequence%20diagram%202.png)
+
+### Diagram 2 - Nursery Manager interaction
+![Sequence Diagram 1](assets/Sequence%20diagram%201.png)
